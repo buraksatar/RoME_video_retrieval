@@ -8,6 +8,6 @@ This repo provides the pseudocode for the following works.
 
 ![Model](img/semantic_model.png)
 
-[Result](img/semantic_result.png)
+![Result](img/semantic_result.png)
 
-[Ablation](img/semantic_ablation.png)
+![Ablation](img/semantic_ablation.jpg)
