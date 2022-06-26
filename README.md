@@ -6,3 +6,8 @@ This repo provides the pseudocode for the following works.
 
 # Semantic Role Aware Correlation Transformer for Text-to-Video Retrieval, ICIP'21
 
+[Model](img/semantic_model.png)
+
+[Result](img/semantic_result.png)
+
+[Ablation](img/semantic_ablation.png)
