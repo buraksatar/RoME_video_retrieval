@@ -10,4 +10,4 @@ This repo provides the pseudocode for the following works.
 
 ![Result](img/semantic_result.png)
 
-![Ablation](img/semantic_ablation.jpg)
+![Ablation](img/semantic_ablation.png)
