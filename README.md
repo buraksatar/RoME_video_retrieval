@@ -4,6 +4,28 @@ This repo provides the pseudocode for the following works.
 - The method got 3rd (joint) award in CVPR'22 Epic Kitchen Multi Instanse Retrieval Challenge (coming soon)
 - Semantic Role Aware Correlation Transformer for Text-to-Video Retrieval, ICIP'21
 
+# The pseudocode
+
+We follow [HGR](https://github.com/cshizhe/hgr_v2t) method as a baseline.
+You may easily replicate our experiments by following the baseline code and our directions.
+- For textual encoding, we use semantic role labeling [tool](https://demo.allennlp.org/semantic-role-labeling) from AllenNLP.
+- We extract video features by following this [repo](https://github.com/antoine77340/video_feature_extractor).
+- We added certain transformer encoder and decoders in the video encoding part, by using [transformers](https://pytorch.org/docs/stable/generated/torch.nn.Transformer.html) from PyTorch.
+- Other parts are clearly mentioned in the papers.
+- If any question you have, I would be happy to answer them or clarify the things regarding the implemention/paper.
+
+# RoME: Role-aware Mixture-of-Expert Transformer for Text-to-Video Retrieval, TCSVT'22 (under review)
+
+### The model
+
+### The results on YouCook2 Validation Set
+
+### The results on MSR-VTT
+
+# Technical report for the method got 3rd (joint) award in CVPR'22 Epic Kitchen Multi Instanse Retrieval Challenge
+
+(coming soon)
+
 # Semantic Role Aware Correlation Transformer for Text-to-Video Retrieval, ICIP'21
 
 ### The model
