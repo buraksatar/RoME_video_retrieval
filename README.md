@@ -115,4 +115,4 @@ If you find this any part of this repo useful, we'd really appreciate it if you 
 
 ### Credits
 
-We thank Shizhe Chen for the beautiful [work](Shizhe Chen) & code since we use it as a baseline.
+We thank Shizhe Chen for the beautiful [work](https://arxiv.org/abs/2003.00392) & code since we use it as a baseline.
