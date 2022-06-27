@@ -18,7 +18,7 @@ You may easily replicate our experiments by following the baseline code and our 
 
 ### The model
 
-![Model](img/rome_model.png)
+![Model](img/rome_model_background.png)
 
 ### The results on YouCook2 Validation Set for Text-to-Video Retrieval
 
