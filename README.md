@@ -63,6 +63,7 @@ We overpass SOTA methods in all metrics when no pre-training with the same featu
 ### The model
 
 ![Model](img/semantic_model.png)
+![Contributions](img/semantic_contributions.png)
 
 ### The results on YouCook2 Validation Set
 
