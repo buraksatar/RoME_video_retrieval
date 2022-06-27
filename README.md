@@ -18,6 +18,8 @@ You may easily replicate our experiments by following the baseline code and our 
 
 ### The model
 
+![Model](img/rome_model.png)
+
 ### The results on YouCook2 Validation Set for Text-to-Video Retrieval
 
 We overpass SOTA methods in all metrics by using the same feature set when no pre-training, except the last metric compared to the last method. 
