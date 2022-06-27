@@ -18,9 +18,13 @@ You may easily replicate our experiments by following the baseline code and our 
 
 ### The model
 
-### The results on YouCook2 Validation Set
+### The results on YouCook2 Validation Set for Text-to-Video Retrieval
+
+We overpass SOTA methods in all metrics by using the same feature set when no pre-training, except the last metric compared to the last method. 
 
 ### The results on MSR-VTT Split 1k-B for Text-to-Video Retrieval
+
+We overpass SOTA methods in all metrics when no pre-training with the same feature set on 1k-B split.
 
 | **Method** 	| **Visual Backbone** 	| **Batch Size** 	| **R@1↑** 	| **R@5↑** 	| **R@10↑** 	| **MdR↓** 	|
 |:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
