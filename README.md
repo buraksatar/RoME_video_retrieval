@@ -22,6 +22,21 @@ You may easily replicate our experiments by following the baseline code and our 
 
 We overpass SOTA methods in all metrics by using the same feature set when no pre-training, except the last metric compared to the last method. 
 
+| **Method** 	| **Visual Backbone** 	| **Batch Size** 	| **R@1↑** 	| **R@5↑** 	| **R@10↑** 	| **MdR↓** 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| Random 	| - 	| - 	| 0.03 	| 0.15 	| 0.3 	| 1675 	|
+| UniVL (v2-FT-Joint), 2020 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 32 	| 3.4 	| 10.8 	| 17.8 	| 76 	|
+| Satar et al., 2021 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 32 	| 4.5 	| 13.2 	| 20.0 	| 85 	|
+| Miech et al., 2019 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| - 	| 4.2 	| 13.7 	| 21.5 	| 65 	|
+| HGR*, 2020 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 32 	| 4.8 	| 14.0 	| 20.3 	| 85 	|
+| HGR*, 2020 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) + <br>Faster R-CNN (MS COCO) 	| 32 	| 4.7 	| 14.1 	| 20.0 	| 87 	|
+| HGLMM, 2020 	| Fisher Vectors 	| - 	| 4.6 	| 14.3 	| 21.6 	| 75 	|
+| <br>Satar et al., 2021 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) + <br>Faster R-CNN (MS COCO) 	| <br>32 	| <br>5.3 	| <br>14.5 	| <br>20.8 	| <br>77 	|
+| SwAMP, 2021 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 128 	| 4.8 	| 14.5 	| 22.5 	| 57 	|
+| TACo, 2021 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 128 	| 4.9 	| 14.7 	| 21.7 	| 63 	|
+| COOT, 2020 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 32 	| 5.9 	| 16.7 	| 24.8 	| **49.7** 	|
+| **RoME** 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 32 	| **6.3** 	| **16.9** 	| **25.2** 	| 53 	|
+
 ### The results on MSR-VTT Split 1k-B for Text-to-Video Retrieval
 
 We overpass SOTA methods in all metrics when no pre-training with the same feature set on 1k-B split.
