@@ -20,7 +20,18 @@ You may easily replicate our experiments by following the baseline code and our 
 
 ### The results on YouCook2 Validation Set
 
-### The results on MSR-VTT
+### The results on MSR-VTT Split 1k-B for Text-to-Video Retrieval
+
+| **Method** 	| **Visual Backbone** 	| **Batch Size** 	| **R@1↑** 	| **R@5↑** 	| **R@10↑** 	| **MdR↓** 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| Random 	| - 	| - 	| 0.1 	| 0.5 	| 1.0 	| 500 	|
+| MoEE, 2018 	| SENet-154 (ImageNet) +<br>R(2+1)D (IG-65m) + <br>Two more visual experts 	| - 	| 13.6 	| 37.9 	| 51.0 	| 10 	|
+| JPoSE, 2019 	| TSN + Flow 	| - 	| 14.3 	| 38.1 	| 53.0 	| 9 	|
+| UniVL (v1*), 2020 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| - 	| 14.6 	| 39.0 	| 52.6 	| 10 	|
+| SwAMP, 2021 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 128 	| 15.0 	| 38.5 	| 50.3 	| 10 	|
+| CE, 2019 	| SENet-154 (ImageNet) +<br>R(2+1)D (IG-65m) +<br>Six more visual experts 	| - 	| 18.2 	| 46.0 	| 60.7 	| 7 	|
+| TACo, 2021 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 128 	| 19.2 	| 44.7 	| 57.2 	| 7 	|
+| **RoME** 	| Resnet-152 (ImageNet) + <br>ResNeXt-101 (Kinetics) 	| 32 	| **21.1** 	| **50.0** 	| **63.1** 	| **5** 	|
 
 # Technical report for the method got 3rd (joint) award in CVPR'22 Epic Kitchen Multi Instanse Retrieval Challenge
 
@@ -47,6 +58,7 @@ Ablation studies on YouCook2 dataset to investigate the contributions of various
 ### References
 
 If you find this any part of this repo useful, we'd really appreciate it if you could cite the following papers
+
 [1] RoME: Role-aware Mixture-of-Expert Transformer for Text-to-Video Retrieval:
 
 ```
