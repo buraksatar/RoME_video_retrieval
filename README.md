@@ -66,15 +66,26 @@ We overpass SOTA methods in all metrics when no pre-training with the same featu
 
 ### The results on YouCook2 Validation Set
 
-Text-to-video retrieval comparison with SOTA approaches on YouCook2 validation set. ’Visual Backbone’ only refers to 3D CNNs Features. Our method surpasses the SOTA methods in the first two parameters when without pre-training.
+Text-to-video retrieval comparison with SOTA approaches on YouCook2 validation set when no pre-training. ’Visual Backbone’ only refers to 3D CNNs Features. Our method surpasses the SOTA methods in the first two parameters when without pre-training.
 
-![Result](img/semantic_resultt.png)
+| **Method** 	| **Visual Backbone** 	| **Batch Size** 	| **R@1** 	| **R@5** 	| **R@10** 	| **MedR** 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| Random 	| - 	| - 	| 0.03 	| 0.15 	| 0.3 	| 1675 	|
+| Miech et al 	| ResNeXt-101 	| - 	| 4.2 	| 13.7 	| 21.5 	| 65 	|
+| HGLMM 	| Fisher Vectors 	| - 	| 4.6 	| 14.3 	| 21.6 	| 75 	|
+| HGR 	| ResNeXt-101 	| 32 	| 4.7 	| 14.1 	| 20.0 	| 87 	|
+| **Ours** 	| ResNeXt-101 	| 32 	| **5.3** 	| **14.5** 	| 20.8 	| 77 	|
 
 ### The ablation experiments
 
 Ablation studies on YouCook2 dataset to investigate the contributions of various feature experts at different levels. The same ablation is also done on HGR method [3] since it is a strong baseline. On 2D + 3D visual features setting, when the feature dimension is 4096, concatenation is done on dimension one; otherwise is done on dimension zero. Our model surpasses HGR with the same hierarchical features with a high margin by using cross-modal attention.
 
-![Ablation](img/semantic_ablation.png)
+| **Method** 	| **Visual Features<br>Appearance** 	| **Visual Features<br>Action** 	| **Visual Features <br>Object** 	| **Feature <br>Dimension** 	| **R@1** 	| **R@5** 	| **R@10** 	| **MedR** 	|
+|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|:---:	|
+| HGR : Ours 	| 2D 	| 2D 	| 2D 	| 2048 	| 4.7 : 4.2 	| 13.8 : 13.7 	| 19.7 : 19.4 	| 86 : 86 	|
+| HGR : Ours 	| 2D + 3D 	| 2D + 3D 	| 2D + 3D 	| 2048 	| 4.8 : 4.5 	| 14.0 : 13.2 	| 20.3 : 20.0 	| 85 : 85 	|
+| HGR : Ours 	| 2D + 3D 	| 2D + 3D 	| 2D + 3D 	| 4096 	| 4.8 : 4.5 	| 14.0 : 13.2 	| 20.3 : 20.0 	| 85 : 85 	|
+| **HGR : Ours** 	| 2D 	| 3D 	| RoI 	| 2048 	| **4.7 : 5.3** 	| **14.1 : 14.5** 	| **20.0 : 20.8** 	| **87 : 77** 	|
 
 ### References
 
