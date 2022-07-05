@@ -56,7 +56,13 @@ We overpass SOTA methods in all metrics when no pre-training with the same featu
 
 # Technical report for the method got 3rd (joint) award in CVPR'22 Epic Kitchen Multi Instanse Retrieval Challenge
 
-(coming soon)
+# The pseudocode
+
+We follow [JPoSE](https://arxiv.org/abs/1908.03477) method as a baseline.
+You may easily replicate our experiments by following the baseline code and our directions.
+- We add certain transformer encoders for self-attention in the video encoding part, by using [transformers](https://pytorch.org/docs/stable/generated/torch.nn.Transformer.html) from PyTorch.
+- Other parts are clearly mentioned in the papers.
+- If any question you have, I would be happy to answer them or clarify the things regarding the implemention/paper.
 
 # Semantic Role Aware Correlation Transformer for Text-to-Video Retrieval, ICIP'21
 
@@ -95,6 +101,16 @@ If you find this any part of this repo useful, we'd really appreciate it if you 
 [1] RoME: Role-aware Mixture-of-Expert Transformer for Text-to-Video Retrieval:
 
 ```
+@misc{https://doi.org/10.48550/arxiv.2206.12845,
+  doi = {10.48550/ARXIV.2206.12845},
+  url = {https://arxiv.org/abs/2206.12845},
+  author = {Satar, Burak and Zhu, Hongyuan and Zhang, Hanwang and Lim, Joo Hwee},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Information Retrieval (cs.IR), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {RoME: Role-aware Mixture-of-Expert Transformer for Text-to-Video Retrieval},
+  publisher = {arXiv}, 
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
 
 
 ```
@@ -114,6 +130,22 @@ If you find this any part of this repo useful, we'd really appreciate it if you 
 }
 ```
 
+[3] Exploiting Semantic Role Contextualized Video Features for Multi-Instance 
+Text-Video Retrieval EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge 2022:
+```
+@misc{https://doi.org/10.48550/arxiv.2206.14381,
+  doi = {10.48550/ARXIV.2206.14381},
+  url = {https://arxiv.org/abs/2206.14381},
+  author = {Satar, Burak and Zhu, Hongyuan and Zhang, Hanwang and Lim, Joo Hwee},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Information Retrieval (cs.IR), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Exploiting Semantic Role Contextualized Video Features for Multi-Instance Text-Video Retrieval EPIC-KITCHENS-100 Multi-Instance Retrieval Challenge 2022},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+```
+
 ### Credits
 
-We thank Shizhe Chen for the beautiful [work](https://arxiv.org/abs/2003.00392) & code since we use it as a baseline.
+We thank Shizhe Chen & Michael Wray for their beautiful work & code respectively, since we use it as a baseline.
+[HGR](https://arxiv.org/abs/2003.00392) & [JPoSE](https://arxiv.org/abs/1908.03477)
